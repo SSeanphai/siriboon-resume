@@ -1,14 +1,51 @@
 import { Typography } from "@mui/material";
 import React, { FC } from "react";
+import BasicTimeline, { BasicTimelineSeparator } from "../Timeline/Timeline";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import { TimelineItem, TimelineContent } from "@mui/lab";
 
 import "./Profile.css";
+import ResumeData from "../../utils/ResumeData";
+
+interface CustomTimelineItemProps {
+  title: string;
+  text: string;
+  link?: string;
+}
+
+const CustomTimelineItem: FC<CustomTimelineItemProps> = ({
+  title,
+  text,
+  link,
+}) => {
+  return (
+    <TimelineItem>
+      <BasicTimelineSeparator></BasicTimelineSeparator>
+      <TimelineContent className="timeline_content">
+        {link ? (
+          <Typography className="timeline_item_text">
+            <span>{title}:</span>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              {text}
+            </a>
+          </Typography>
+        ) : (
+          <Typography className="timeline_item_text">
+            <span>{title}:</span>
+            {text}
+          </Typography>
+        )}
+      </TimelineContent>
+    </TimelineItem>
+  );
+};
 
 const Profile: FC = () => {
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
-        <Typography className="name">Siriboon Panpiriya</Typography>
-        <Typography className="title">Fresh Graduate</Typography>
+        <Typography className="name">{ResumeData.name}</Typography>
+        <Typography className="title">{ResumeData.title}</Typography>
       </div>
 
       <figure className="profile_image">
@@ -20,7 +57,18 @@ const Profile: FC = () => {
       </figure>
 
       <div className="profile_information">
-        timeline
+        <BasicTimeline title={<title />} icon={<PersonOutlineOutlinedIcon />}>
+          <CustomTimelineItem title="Name" text={ResumeData.name} />
+          <CustomTimelineItem title="Title" text={ResumeData.title} />
+          <CustomTimelineItem title="Email" text={ResumeData.email} />
+          {Object.keys(ResumeData.socials).map((key) => (
+            <CustomTimelineItem
+              title={key}
+              text={ResumeData.socials[key].text}
+              link={ResumeData.socials[key].link}
+            />
+          ))}
+        </BasicTimeline>
         <br />
         <button>cv download</button>
       </div>
