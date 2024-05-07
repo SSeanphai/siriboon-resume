@@ -1,7 +1,8 @@
+import { Container } from "@mui/material";
 import React from "react";
 
-function Botton() {
-  return <div>Botton</div>;
-}
+const Botton: React.FC = () => {
+  return <Container></Container>;
+};
 
 export default Botton;

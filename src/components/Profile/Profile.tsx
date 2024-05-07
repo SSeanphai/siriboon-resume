@@ -24,14 +24,14 @@ const CustomTimelineItem: FC<CustomTimelineItemProps> = ({
       <TimelineContent className="timeline_content">
         {link ? (
           <Typography className="timeline_item_text">
-            <span>{title}:</span>
+            <span>{title}: </span>
             <a href={link} target="_blank" rel="noopener noreferrer">
               {text}
             </a>
           </Typography>
         ) : (
           <Typography className="timeline_item_text">
-            <span>{title}:</span>
+            <span>{title}: </span>
             {text}
           </Typography>
         )}
@@ -48,16 +48,16 @@ const Profile: FC = () => {
         <Typography className="title">{ResumeData.title}</Typography>
       </div>
 
-      <figure className="profile_image">
+      <div className="profile_image">
         <img
           className="image"
           src="https://media.discordapp.net/attachments/813807614462263336/1104086455099326514/A4F76F81-9D9F-43F6-A768-16E39D6329FF.jpg?ex=6635bd63&is=66346be3&hm=9354635e17bd6f074523b70766114b74e2120c759f3aa929bda22082bd510ac9&=&format=webp&width=550&height=550"
           alt=""
         />
-      </figure>
+      </div>
 
       <div className="profile_information">
-        <BasicTimeline title={<title />} icon={<PersonOutlineOutlinedIcon />}>
+        <BasicTimeline title="" icon={<PersonOutlineOutlinedIcon />}>
           <CustomTimelineItem title="Name" text={ResumeData.name} />
           <CustomTimelineItem title="Title" text={ResumeData.title} />
           <CustomTimelineItem title="Email" text={ResumeData.email} />
@@ -69,8 +69,6 @@ const Profile: FC = () => {
             />
           ))}
         </BasicTimeline>
-        <br />
-        <button>cv download</button>
       </div>
     </div>
   );

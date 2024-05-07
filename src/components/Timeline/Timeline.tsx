@@ -1,9 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import Timeline from "@mui/lab/Timeline";
-import TimelineItem, {
-  TimelineItemProps,
-  timelineItemClasses,
-} from "@mui/lab/TimelineItem";
+import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
@@ -20,15 +17,7 @@ interface BasicTimelineProps {
 
 const BasicTimeline: FC<BasicTimelineProps> = ({ title, children, icon }) => {
   return (
-    <Timeline
-      className="timeline"
-      sx={{
-        [`& .${timelineItemClasses.root}:before`]: {
-          flex: 0,
-          padding: 0,
-        },
-      }}
-    >
+    <Timeline className="timeline">
       {/* header */}
       <TimelineItem className="timeline_firstItem">
         <TimelineSeparator>

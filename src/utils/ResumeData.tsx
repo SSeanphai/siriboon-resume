@@ -13,7 +13,7 @@ interface SocialLink {
 interface SocialLinks {
   facebook: SocialLink;
   instagram: SocialLink;
-  github: SocialLink;
+  [github: string]: SocialLink;
 }
 
 interface ResumeData {
@@ -34,17 +34,17 @@ const ResumeData: ResumeData = {
   location: "Bangkok",
   phone: "094-946-4515",
   socials: {
-    Facebook: {
+    facebook: {
       link: "https://www.facebook.com/profile.php?id=100005533304570",
       text: "siriboon panpiriya",
       icon: <FacebookIcon />,
     },
-    Instagram: {
+    instagram: {
       link: "https://www.instagram.com/seanphai/",
       text: "seanphai",
       icon: <InstagramIcon />,
     },
-    Github: {
+    github: {
       link: "https://github.com/SSeanphai",
       text: "SSeanphai",
       icon: <GitHubIcon />,

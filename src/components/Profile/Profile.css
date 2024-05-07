@@ -1,6 +1,5 @@
 .profile {
-  background-color: rgb(255, 255, 255);
-  border-radius: 6px;
+  border-radius: 10px;
   width: 100%;
   display: inline-block;
 }
@@ -14,15 +13,15 @@
   text-transform: uppercase;
   font-size: 17px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .profile_name .title {
   font-size: 13px;
-  color: #777;
+  color: #ffffff;
 }
 
 .profile_image {
-  margin: 0;
   margin-top: -10px;
   clip-path: polygon(0 13%, 100% 0, 100% 80%, 0 100%);
 }
@@ -34,26 +33,26 @@
 .profile_information {
   top: 0;
   left: 0;
-  margin: -55px 8px 30px;
+  margin: -70px 8px 30px;
 }
 
 .profile_information .timeline .timeline_content {
   margin-top: 2px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .timeline_item_text {
-  font-size: 14px !important;
-  color: #787878 !important;
+  font-size: 13.5px !important;
+  color: #ffffff !important;
   font-weight: 400 !important;
   text-decoration: none;
 }
 
 .timeline_item_text > a {
-  color: #787878 !important;
+  color: #ffffff !important;
   text-decoration: none;
 }
 
 .timeline_item_text > span {
-  color: black;
+  color: rgb(142, 142, 142);
 }

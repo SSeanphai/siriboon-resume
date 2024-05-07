@@ -6,22 +6,28 @@ import Portfolio from "./page/Portfolio/Portfolio";
 import Resume from "./page/Resume/Resume";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <Container>
-      <Grid container>
-        <Grid item xs={12} sm={12} md={4} lg={3} style={{ background: "red" }}>
+    <Container className="top_60">
+      <div className="grain"></div>
+      <div className="bgImage"></div>
+
+      <Grid container spacing={6}>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs style={{ background: "blue" }}>
+        <Grid item xs className="index">
           <Header />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/" element={<Resume />} />
-            </Routes>
-          </BrowserRouter>
+          <div style={{ paddingTop: "20px", paddingBottom: "20px" }}>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/" element={<Resume />} />
+              </Routes>
+            </BrowserRouter>
+          </div>
           <Footer />
         </Grid>
       </Grid>

@@ -3,39 +3,48 @@
 }
 
 .timeline .timeline_header {
-  padding-top: 7px;
+  padding-top: 7px !;
 }
 
 .timeline .timeline_firstItem {
   min-height: 80px !important;
 }
 
-.timeline .Muitimelineitem-root {
+.timeline .MuiTimelineItem-root {
   min-height: 0px;
+}
+
+.timeline .MuiTimelineItem-missingOppositeContent:before {
+  display: none;
 }
 
 .timeline .timeline_dot_header {
   color: white !important;
-  background: #4985e2 !important;
+  background: #000000 !important;
   font-size: small !important;
-  padding: 2px !important;
+  padding: 10px !important;
 }
 
 .timeline .timeline_dot {
   color: black !important;
-  background: #4985e2 !important;
+  background: #000000 !important;
   padding: 2px !important;
 }
 
 .timeline .MuiTimelineConnector-root {
-  background-color: #eee !important;
+  background-color: #848484 !important;
+}
+
+.timeline .timeline_dot_header > .MuiSvgIcon-root {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .timeline .separator_padding {
-  padding-left: 12px;
+  padding-left: 18px !important;
 }
 
 .timeline .timeline_content {
-  padding-top: 0px !important;
+  padding-top: 0;
   margin-bottom: 20px;
 }
