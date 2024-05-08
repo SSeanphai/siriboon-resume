@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import React, { FC } from "react";
+import { FC } from "react";
 import BasicTimeline, { BasicTimelineSeparator } from "../Timeline/Timeline";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { TimelineItem, TimelineContent } from "@mui/lab";
