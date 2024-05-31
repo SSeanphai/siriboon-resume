@@ -12,7 +12,7 @@ function Header() {
         <Navbar.Brand href="#home" style={{ color: "white" }}>
           <img
             alt=""
-            src="https://media.discordapp.net/attachments/813807614462263336/1237323212233244713/logo.png?ex=663b3a8a&is=6639e90a&hm=8912d5506aa11e482f109b69652a0dfd413140e235c39c84ffc8ed1addb82ff8&=&format=webp&quality=lossless"
+            src="https://i.ibb.co/M8SxLxf/logo.png"
             width="30"
             height="30"
             className="d-inline-block align-top"
