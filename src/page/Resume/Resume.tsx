@@ -4,22 +4,17 @@ import {
   TimelineContent,
   TimelineDot,
   TimelineItem,
-  TimelineOppositeContent,
   TimelineSeparator,
   timelineItemClasses,
-  timelineOppositeContentClasses,
 } from "@mui/lab";
 import "./Resume.css";
 import {
-  Box,
   Card,
   CardContent,
   Chip,
   Grid,
-  Paper,
   Stack,
   Typography,
-  styled,
 } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 
