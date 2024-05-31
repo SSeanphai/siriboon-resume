@@ -1,5 +1,16 @@
-function Portfolio() {
-  return <div>Portfolio</div>;
-}
+import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
 
-export default Portfolio;
+import "./Portfolio.css";
+
+export default function MultiActionAreaCard() {
+  return (
+    <div className="portfolio">
+      <Grid container className="aboutMe">
+        <Grid item xs={12}>
+          <p className="tagHeader">My project</p>
+        </Grid>
+      </Grid>
+      {/* <ProjectCard /> */}
+    </div>
+  );
+}

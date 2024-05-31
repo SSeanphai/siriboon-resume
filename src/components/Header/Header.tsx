@@ -9,7 +9,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" className="Header">
       <Container>
-        <Navbar.Brand href="#home" style={{ color: "white" }}>
+        <Navbar.Brand href="/" style={{ color: "white" }}>
           <img
             alt=""
             src="https://i.ibb.co/M8SxLxf/logo.png"
@@ -24,10 +24,14 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link style={{ fontWeight: "bold", color: "white" }}>
-              Resume
+            <Nav.Link
+              href="/portfolio"
+              style={{ fontWeight: "bold", color: "white" }}
+            >
+              Portfolio
             </Nav.Link>
           </Nav>
+
           <div className="header_right">
             {Object.keys(ResumeData.socials).map((Key) => (
               <a

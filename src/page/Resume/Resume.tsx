@@ -59,9 +59,9 @@ function Resume() {
               </TimelineSeparator>
               <TimelineContent>
                 <Typography variant="h6" component="span">
-                  Eat
+                  2014 - 2019
                 </Typography>
-                <Typography>Because you need strength</Typography>
+                <Typography>Rayongwittayakom School</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -72,9 +72,11 @@ function Resume() {
               </TimelineSeparator>
               <TimelineContent>
                 <Typography variant="h6" component="span">
-                  Eat
+                  2020 - 2024
                 </Typography>
-                <Typography>Because you need strength</Typography>
+                <Typography>
+                  King Mongkut's Institute of Technology Ladkrabang
+                </Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
