@@ -31,6 +31,14 @@ function Header() {
               Portfolio
             </Nav.Link>
           </Nav>
+          <Nav className="me-auto">
+            <Nav.Link
+              href="/Test"
+              style={{ fontWeight: "bold", color: "white" }}
+            >
+              Test
+            </Nav.Link>
+          </Nav>
 
           <div className="header_right">
             {Object.keys(ResumeData.socials).map((Key) => (
