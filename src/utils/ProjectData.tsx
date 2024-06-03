@@ -8,11 +8,11 @@ interface Project {
 
 const projectData: Project[] = [
   {
-    img: "https://loremflickr.com/640/480/business",
-    name: "Dibbert Group",
+    img: "../src/assets/banner test.png",
+    name: "พฤกษาภิรมย์",
     description:
       "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-    link: "79616",
+    link: "/projectPage",
     id: "1",
   },
   {

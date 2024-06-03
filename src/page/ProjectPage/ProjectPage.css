@@ -1,4 +1,4 @@
-.portfolio {
+.project {
   padding-top: 5px;
   background: rgba(255, 255, 255, 0.11);
   border-radius: 16px;
@@ -6,4 +6,22 @@
   -webkit-backdrop-filter: blur(4.5px);
   backdrop-filter: blur(4.5px);
   border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.image {
+  border-radius: 10px;
+  width: 100%;
+  padding: 2%;
+}
+
+.description {
+  color: whitesmoke;
+  max-width: 90%;
+}
+
+.info {
+  padding: 3%;
+  justify-items: center;
+  align-items: center;
+  display: grid;
 }
