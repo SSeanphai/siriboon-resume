@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Portfolio from "./page/Portfolio/Portfolio";
 import Resume from "./page/Resume/Resume";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import "./App.css";
 import ProjectPage from "./page/ProjectPage/ProjectPage";
 
@@ -25,7 +25,9 @@ function App() {
               <Routes>
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/" element={<Resume />} />
-                <Route path="/projectPage" element={<ProjectPage />} />
+                <Route path="/projectPage">
+                  <Route path=":id" element={<ProjectPage />} />
+                </Route>
               </Routes>
             </BrowserRouter>
           </div>

@@ -8,25 +8,26 @@ interface Project {
 
 const projectData: Project[] = [
   {
-    img: "../src/assets/banner test.png",
+    img: "../src/assets/pruksapilom/banner.png",
     name: "พฤกษาภิรมย์",
     description:
-      "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-    link: "/projectPage",
+      "พฤกษาภิรมย์ ช่วยให้การดูแลต้นไม้ในบ้านและที่ทำงานง่ายขึ้น ไม่ว่าคุณจะเป็นมือใหม่หรือมือเก่า แอปนี้จะให้คำแนะนำและข้อมูลที่จำเป็นเพื่อให้ต้นไม้ของคุณเติบโตอย่างสวยงามและแข็งแรง",
+    link: "/projectPage/0",
     id: "1",
   },
   {
-    img: "https://loremflickr.com/640/480/business",
-    name: "Langosh - Bosco",
-    description: "The Football Is Good For Training And Recreational Purposes",
-    link: "717",
+    img: "../src/assets/Uniinfo/banner.png",
+    name: "Uni-info HUB",
+    description:
+      "โปรเจคในวิชา Human interface design ที่ทำร่วมกับเพื่อนๆ 4 คน ไอเดียคือ application สำหรับนักศึกษาที่ใช้ในการติดตามข้อมูลข่าวสารต่างๆ และ ดูข้อมูลของตนเอง",
+    link: "/projectPage/1",
     id: "2",
   },
   {
     img: "https://loremflickr.com/640/480/business",
     name: "Cremin Group",
     description: "The Football Is Good For Training And Recreational Purposes",
-    link: "367",
+    link: "/projectPage/2",
     id: "3",
   },
   {
@@ -34,7 +35,7 @@ const projectData: Project[] = [
     name: "Gleichner - Smith",
     description:
       "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-    link: "13692",
+    link: "/projectPage/3",
     id: "4",
   },
   {
@@ -42,7 +43,7 @@ const projectData: Project[] = [
     name: "Streich - Kerluke",
     description:
       "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
-    link: "046",
+    link: "/projectPage/4",
     id: "5",
   },
   {
@@ -50,7 +51,7 @@ const projectData: Project[] = [
     name: "Kemmer - Roberts",
     description:
       "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-    link: "6075",
+    link: "/projectPage/5",
     id: "6",
   },
 ];

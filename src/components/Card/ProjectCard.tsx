@@ -4,6 +4,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
+import "./ProjectCard.css";
+
 interface ProjectCardProps {
   img: string;
   name: string;
@@ -18,8 +20,8 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   return (
-    <Card className="card" sx={{ maxWidth: 250 }}>
-      <CardActionArea>
+    <Card className="card" sx={{ maxWidth: 260 }}>
+      <CardActionArea href={link}>
         <CardMedia
           component="img"
           height="200"
@@ -35,11 +37,6 @@ export default function ProjectCard({
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" href={link}>
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 }
