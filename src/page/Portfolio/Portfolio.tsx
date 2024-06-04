@@ -1,4 +1,4 @@
-import { Grid, Grow } from "@mui/material";
+import { Grid } from "@mui/material";
 
 import "./Portfolio.css";
 import ProjectCard from "../../components/Card/ProjectCard";
