@@ -6,8 +6,6 @@ import { CardActionArea } from "@mui/material";
 
 import "./ProjectCard.css";
 
-import main from "/public/pruksapilom/main.png";
-
 interface ProjectCardProps {
   img: string;
   name: string;
@@ -16,7 +14,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({
-  // img,
+  img,
   name,
   description,
   link,
@@ -27,7 +25,7 @@ export default function ProjectCard({
         <CardMedia
           component="img"
           height="200"
-          image={main}
+          image={img}
           alt="project image"
         />
         <CardContent>

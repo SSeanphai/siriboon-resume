@@ -8,7 +8,7 @@ interface Project {
 
 const projectData: Project[] = [
   {
-    img: "../src/assets/pruksapilom/banner.png",
+    img: "../public/pruksapilom/banner.png",
     name: "พฤกษาภิรมย์",
     description:
       "พฤกษาภิรมย์ ช่วยให้การดูแลต้นไม้ในบ้านและที่ทำงานง่ายขึ้น ไม่ว่าคุณจะเป็นมือใหม่หรือมือเก่า แอปนี้จะให้คำแนะนำและข้อมูลที่จำเป็นเพื่อให้ต้นไม้ของคุณเติบโตอย่างสวยงามและแข็งแรง",
