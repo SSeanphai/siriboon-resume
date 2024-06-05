@@ -2,7 +2,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, Chip } from "@mui/material";
 
 import "./ProjectCard.css";
 
@@ -11,6 +11,7 @@ interface ProjectCardProps {
   name: string;
   description: string;
   link: string;
+  type: string;
 }
 
 export default function ProjectCard({
@@ -18,6 +19,7 @@ export default function ProjectCard({
   name,
   description,
   link,
+  type,
 }: ProjectCardProps) {
   return (
     <Card className="card" sx={{ maxWidth: 260 }}>
@@ -35,6 +37,8 @@ export default function ProjectCard({
           <Typography className="description" variant="body2">
             {description}
           </Typography>
+
+          <Chip color="success" label={type} />
         </CardContent>
       </CardActionArea>
     </Card>
