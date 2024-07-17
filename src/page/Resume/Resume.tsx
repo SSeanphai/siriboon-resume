@@ -107,7 +107,6 @@ function Resume() {
                   <Chip label="Javascript" variant="outlined" />
                   <Chip label="Typescript" variant="outlined" />
                   <Chip label="Python" variant="outlined" />
-                  <Chip label="C" variant="outlined" />
                   <Chip label="Java" variant="outlined" />
                   <Chip label="NextJs" variant="outlined" />
                   <Chip label="ReactJs" variant="outlined" />
@@ -128,15 +127,19 @@ function Resume() {
                   flexWrap="wrap"
                   paddingTop={1}
                 >
-                  <Chip label="HTML" variant="outlined" />
-                  <Chip label="CSS" variant="outlined" />
-                  <Chip label="Javascript" variant="outlined" />
-                  <Chip label="Typescript" variant="outlined" />
-                  <Chip label="Python" variant="outlined" />
-                  <Chip label="C" variant="outlined" />
-                  <Chip label="Java" variant="outlined" />
-                  <Chip label="NextJs" variant="outlined" />
-                  <Chip label="ReactJs" variant="outlined" />
+                  <Chip label="Networking" variant="outlined" />
+                  <Chip label="Cloud" variant="outlined" />
+                  <Chip label="Routing & Switching" variant="outlined" />
+                  <Chip label="VMWare" variant="outlined" />
+                  <Chip label="Load Balancer" variant="outlined" />
+                  <Chip label="TCP/IP" variant="outlined" />
+                  <Chip label="VPN" variant="outlined" />
+                  <Chip label="Network infrastructure" variant="outlined" />
+                  <Chip label="Firewall" variant="outlined" />
+                  <Chip label="WireShark" variant="outlined" />
+                  <Chip label="GNS3" variant="outlined" />
+                  <Chip label="Packet tracer" variant="outlined" />
+                  <Chip label="Grafana" variant="outlined" />
                 </Stack>
               </CardContent>
             </Card>
@@ -154,15 +157,13 @@ function Resume() {
                   flexWrap="wrap"
                   paddingTop={1}
                 >
-                  <Chip label="HTML" variant="outlined" />
-                  <Chip label="CSS" variant="outlined" />
-                  <Chip label="Javascript" variant="outlined" />
-                  <Chip label="Typescript" variant="outlined" />
-                  <Chip label="Python" variant="outlined" />
-                  <Chip label="C" variant="outlined" />
-                  <Chip label="Java" variant="outlined" />
-                  <Chip label="NextJs" variant="outlined" />
-                  <Chip label="ReactJs" variant="outlined" />
+                  <Chip label="Cypress" variant="outlined" />
+                  <Chip label="Selenium" variant="outlined" />
+                  <Chip label="Robot Framework" variant="outlined" />
+                  <Chip label="Postman" variant="outlined" />
+                  <Chip label="SQL" variant="outlined" />
+                  <Chip label="Git/Github" variant="outlined" />
+                  <Chip label="Testing" variant="outlined" />
                 </Stack>
               </CardContent>
             </Card>

@@ -26,8 +26,7 @@ const projectInfo: Info[] = [
     name: "Uni-infoHub",
     link: "/projectPage",
     mainImage: "https://i.ibb.co/s51PKCQ/main.png",
-    description:
-      "พฤกษาภิรมย์ ช่วยให้การดูแลต้นไม้ในบ้านและที่ทำงานง่ายขึ้น ไม่ว่าคุณจะเป็นมือใหม่หรือมือเก่า แอปนี้จะให้คำแนะนำและข้อมูลที่จำเป็นเพื่อให้ต้นไม้ของคุณเติบโตอย่างสวยงามและแข็งแรง",
+    description: "",
     projectImg: [
       "https://i.ibb.co/znFsKqt/Mac-Book-Pro-14-1.png",
       "https://i.ibb.co/vmLnnWX/Mac-Book-Pro-14-2.png",
@@ -46,8 +45,7 @@ const projectInfo: Info[] = [
     name: "FindJob",
     link: "/projectPage",
     mainImage: "https://i.ibb.co/RpznmHc/main.png",
-    description:
-      "พฤกษาภิรมย์ ช่วยให้การดูแลต้นไม้ในบ้านและที่ทำงานง่ายขึ้น ไม่ว่าคุณจะเป็นมือใหม่หรือมือเก่า แอปนี้จะให้คำแนะนำและข้อมูลที่จำเป็นเพื่อให้ต้นไม้ของคุณเติบโตอย่างสวยงามและแข็งแรง",
+    description: "",
     projectImg: [
       "https://i.ibb.co/1Mtp443/1-4-Login.png",
       "https://i.ibb.co/Vg6WGVr/Desktop-1.png",
@@ -61,7 +59,7 @@ const projectInfo: Info[] = [
       "https://i.ibb.co/rxSmdX0/4-1-Dashboard-appliant.png",
       "https://i.ibb.co/k2WrTk2/material.png",
     ],
-    id: "1",
+    id: "2",
   },
 ];
 
